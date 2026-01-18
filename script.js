@@ -3,6 +3,7 @@ let divMessages = document.querySelector("#notesList");
 let btnAdd = document.querySelector("#addBtn");
 btnAdd.addEventListener("click", () => {
   let note = txtMessage.value.trim();
+  
   if (note === "") return; 
 let arr = [];
   if (localStorage.getItem("mynotes") != null) {
